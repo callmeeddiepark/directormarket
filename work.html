@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIRECTOR MARKET — WORK</title>
+    <meta name="description" content="디렉터마켓 포트폴리오 창고입니다. 저희가 진행했던 작업물들을 확인해보세요.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* WORK 페이지 전용 헤더 여백 (이미지가 덮이지 않도록) */
+        .work-hero {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            text-align: center;
+            background-color: #000;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .work-item {
+            background: #111;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .work-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+        }
+
+        .work-item-img-wrap {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .work-item-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .work-item:hover .work-item-img {
+            transform: scale(1.05);
+        }
+
+        .work-item-content {
+            padding: 30px;
+        }
+
+        .work-item-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .work-item-desc {
+            font-size: 1rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        /* nav-logo를 index.html 로 보냄 */
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="img/logo_white.png" alt="Director Market Logo" class="nav-logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#about" class="nav-link">ABOUT</a>
+                <a href="work.html" class="nav-link" style="color:#ffffff;">WORK</a>
+                <a href="index.html#blog" class="nav-link">BLOG</a>
+                <a href="index.html#contact" class="nav-link">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Hero Section -->
+    <section class="work-hero" id="work-hero">
+        <h1 class="section-title" data-aos="fade-up">OUR WORKS</h1>
+        <p class="section-lead" data-aos="fade-up" data-aos-delay="100">우리가 만들어낸 크리에이티브 솔루션들입니다.</p>
+    </section>
+
+    <!-- Work Grid Section -->
+    <section class="section">
+        <div class="work-grid">
+            <!-- Sample Portfolio Item 1 -->
+            <div class="work-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="work-item-img-wrap">
+                    <img src="img/idea-planet.jpeg" alt="Work 1" class="work-item-img">
+                </div>
+                <div class="work-item-content">
+                    <h3 class="work-item-title">Project Alpha</h3>
+                    <p class="work-item-desc">Brand Strategy & Identity Design for a global fintech company.</p>
+                </div>
+            </div>
+            <!-- Sample Portfolio Item 2 -->
+            <div class="work-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="work-item-img-wrap">
+                    <img src="img/kv-alt.jpeg" alt="Work 2" class="work-item-img">
+                </div>
+                <div class="work-item-content">
+                    <h3 class="work-item-title">Project Beta</h3>
+                    <p class="work-item-desc">Integrated Campaign & Digital Experience for a major sports brand.</p>
+                </div>
+            </div>
+            <!-- Sample Portfolio Item 3 -->
+            <div class="work-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="work-item-img-wrap">
+                    <img src="img/hero-bg.jpg" alt="Work 3" class="work-item-img">
+                </div>
+                <div class="work-item-content">
+                    <h3 class="work-item-title">Project Gamma</h3>
+                    <p class="work-item-desc">Spatial Design and Interactive Media for a pop-up exhibition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer" style="margin-top: 100px;">
+        <div class="footer-earth">
+            <img src="img/footer-bg.png" alt="Earth" class="footer-earth-img">
+        </div>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="footer-dm">DM</span>
+                <span class="footer-brand">DIRECTOR<br>MARKET</span>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 DIRECTOR MARKET. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
